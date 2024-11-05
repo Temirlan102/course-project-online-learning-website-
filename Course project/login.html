@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-image: url('minimalist-blue.jpg')">
+    <header class="nav">
+        <h1>Welcome to your bright future</h1>
+        <img src="LE.png" alt="Learning Platform Logo">
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a class="cat" href="#">Category</a>
+        <a href="login.html">Sign in</a>
+        <div class="search-container">
+            <form action="#" method="GET">
+                <input type="text" placeholder="Search..." name="search" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <form class="login" method="post">
+        <div class="container">
+            <label for="email"><b>Enter your email address</b></label><br>
+            <input type="email" id="email" placeholder="example@gmail.com" name="email" required>
+            <br>
+            <label for="password"><b>Enter your password</b></label><br>
+            <input type="password" id="password" placeholder="Enter password" name="password" required>
+            <br>
+            <button type="submit" class="sign">Sign in</button>
+        </div>
+    </form>
+
+    <div class="ball"></div>
+</body>
+</html>

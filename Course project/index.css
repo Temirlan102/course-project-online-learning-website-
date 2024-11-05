@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    flex: 1; /* Allows the wrapper to grow and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav {
+    height: auto;
+    background-color: rgb(8, 11, 91);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(8, 6, 132);
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(8, 6, 132);
+    border-radius: 4px;
+    width: auto;
+    margin: 5px 0;
+}
+
+.search-container {
+    text-align: center;
+    width: 100%;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 20px;
+    border: 2px groove blueviolet;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 17px;
+    background-color: #9fe7fb;
+    color: rgb(8, 11, 91);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.search-container button:hover {
+    background-color: rgb(8, 11, 91);
+    color: white;
+    border-radius: 20px;
+}
+
+.content {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.quote {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.course {
+    width: 90%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(8, 11, 91);
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgb(162, 239, 136);
+    margin: 50px auto;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+input[type=email], input[type=password] {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.sign {
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+    background-color: rgb(165, 234, 62);
+    border-radius: 8px;
+    margin: 20px auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ball {
+    animation: float 3.5s ease-in-out infinite;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 75% 30%,
+        white 5px,
+        #0800ff 8%,
+        #8467b7 60%,
+        #0d00ff 100%
+    );
+    box-shadow: inset 0 0 20px #c1aac6;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu a {
+        font-size: 16px;
+    }
+
+    .quote {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .search-container input[type=text] {
+        width: 90%;
+    }
+
+    .search-container button {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
