@@ -1,3 +1,3 @@
-# git-demo
+# Website prototype
 
-some content is added
+During my studies I created simple and basic website using html, css.
