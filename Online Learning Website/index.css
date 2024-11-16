@@ -1,128 +1,82 @@
 body {
     margin: 0;
     padding: 0;
-    display:flex;
-    flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .nav {
-    width:100%;
-    height:auto;
+    width: 100%;
+    height: 120px;
     background-color: rgb(8, 11, 91);
     color: #f2f2f2;
     text-align: center;
-    padding:20px;
+    padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.menu {
-    clear:both;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(8, 6, 132);
+.navbar {
+    margin-bottom: 20px;
 }
 
-.menu a {
-    border:none;
-    float:left;
-    display:block;
-    color:white;
-    font-size: 25px;
+.navbar-brand {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
     text-align: center;
-    padding: 14px 20px;
-    width:150px;
-    height: auto;
-    text-decoration: none;
-    background-color: rgb(8, 6, 132);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 0;
 }
 
-
-.menu a:hover {background-color: #ddd; color:black}
-
-.dropdown{
-    position:relative;
-    display:inline-block;
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
 }
 
-.drop-con{
-    display:none;
-    position:absolute;
-    background: #f1f1f1;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.card-text {
+    font-size: 16px;
+    color: #7f8c8d;
 }
 
-.drop-con a {
-    color: rgb(235, 235, 235);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-.drop-con a:hover {background-color: #ddd; color:black}
-
-.dropdown:hover .drop-con {display: block;}
-
-.menu {
-    clear:both;
-
+h1, .h3 {
+    font-family: 'Arial', sans-serif;
 }
-
-.content {
-    width: 1100px;
-    height: auto;
-    margin-top: auto;
-    text-align: left;
-    padding-left: 20px;
-}
-
 
 .quote {
-    max-width: 800px;
+    max-width: 75%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
 
-.con {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin-top: auto;
-    padding-bottom: 20px;
-}
-
-.nav img {
-    width: 120px;
-    height: auto;
-    float:left;
-    margin-right: 20px;
-    margin-top: -80px;
-
-}
-
 .search-container {
-    text-align:right;
-    margin: 10px;
+    text-align: right;
+    margin-top: 10px;
 }
 
-.search-container input[type=text] {
+.search-container input[type="text"] {
     padding: 10px;
     font-size: 17px;
-    border:none;
+    border: none;
     width: 50%;
     max-width: 250px;
     border-radius: 20px;
-    margin-top: 13px;
-    border-style:groove;
-    border-width: 5px;
+    border-width: 6px;
+    border-style: groove;
     border-color: blueviolet;
 }
 
@@ -133,8 +87,8 @@ body {
     color: rgb(8, 11, 91);
     cursor: pointer;
     border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .search-container button:hover {
@@ -144,14 +98,14 @@ body {
 }
 
 .course {
-    width:30%;
+    width:100%;
+    max-width: 30%;
     background-color: #f9f9f9;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 2px 5px rgb(8, 11, 91);
     font-weight: bold;
-    margin-top:50px;
 }
 
 .course img {
@@ -176,7 +130,7 @@ body {
 
 input[type=email], input[type=password] {
     width: 30%;
-    padding: 12px;
+    padding: 13px;
     display:inline-block;
     margin: 25px auto;
     border-radius: 5px;
@@ -246,5 +200,40 @@ input[type=email], input[type=password] {
 
     100% {
         transform: translateY(300px); 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .course {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .search-container input[type=text] {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav h1 {
+        font-size: 18px;
+    }
+
+    .course p {
+        font-size: 16px;
+    }
+
+    .search-container input[type=text] {
+        width: 70%;
+    }
+
+    .search-container button {
+        font-size: 14px;
     }
 }
